@@ -104,14 +104,6 @@ a {
 .img2,
 .img3,
 .img4 {
-  /* vertical-align: -webkit-baseline-middle;
-  display: inline-block;
-  max-width: 34em;
-  height: 36em;
-  padding: 30px;
-  border: 1px solid #e50202;
-  object-fit: cover;
-  margin-inline: 7px; */
   margin-inline: 32px;
   border: 2px solid none;
   display: inline-block;
