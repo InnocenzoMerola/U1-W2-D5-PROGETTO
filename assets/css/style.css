@@ -1,0 +1,189 @@
+/* Your styles here */
+head {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e9edee;
+}
+
+main {
+  margin-inline: 3em;
+}
+
+.divA {
+  background-color: #222f3f;
+}
+
+.divA img {
+  width: 10em;
+  padding-block: 1em;
+}
+
+.divB {
+  background-color: #364759;
+  font-size: 1.4em;
+  color: white;
+}
+
+li {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.divA,
+.divB {
+  padding-inline: 3em;
+}
+
+.sec1 {
+  text-align: center;
+  color: white;
+}
+
+h4 {
+  font-size: 1.5em;
+  padding-block: 0.4em;
+  margin-block: 3em;
+  background-color: #f56600;
+}
+
+.div1 {
+  padding-block: 6em;
+  background-image: url(/assets/images/bg-image.png);
+  background-size: contain;
+}
+
+.div1 h1 {
+  font-size: 3em;
+  padding-bottom: 0.4em;
+}
+
+.div1 h3 {
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+
+article {
+  padding: 1em;
+  background-color: white;
+  margin-block: 3em;
+}
+
+.intest {
+  padding-block: 1em;
+}
+
+.intest h2,
+a {
+  display: inline-block;
+}
+
+.intest h2 {
+  padding-right: 1em;
+
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.intest a {
+  font-size: 1.2em;
+  color: #115e64;
+}
+
+.container {
+  height: 46em;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  /* vertical-align: -webkit-baseline-middle;
+  display: inline-block;
+  max-width: 34em;
+  height: 36em;
+  padding: 30px;
+  border: 1px solid #e50202;
+  object-fit: cover;
+  margin-inline: 7px; */
+  margin-inline: 32px;
+  border: 2px solid none;
+  display: inline-block;
+  width: 34em;
+  height: 45em;
+  box-shadow: 10px 10px 5px #cdcdcd;
+  vertical-align: top;
+}
+
+.container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.container img {
+  border-radius: 6%;
+}
+
+.img5 {
+  width: 100%;
+}
+
+.img5 img {
+  width: 100%;
+}
+
+aside h2,
+a {
+  text-align: center;
+  display: inline-block;
+  padding-right: 1em;
+}
+
+aside h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+aside a {
+  padding-left: 1em;
+  font-size: 1em;
+  color: #115e64;
+}
+
+.center {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+footer {
+  text-align: center;
+}
+
+.foo1 {
+  background-color: #364759;
+  padding: 1em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.foo2 {
+  background-color: #222f3f;
+  padding: 5em;
+}
+
+.div1,
+.intest,
+h2 {
+  font-weight: bold;
+}
