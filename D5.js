@@ -67,13 +67,14 @@ console.log("Es. 5: ", cars);
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 const newObj = [];
-cars.newObj = { brand: "Mercedes", model: "ClasseA", color: "Gray", trins: ["active", "style"] };
+cars.newObj = { brand: "Mercedes", model: "ClasseA", color: "Gray", trims: ["active", "style"] };
 cars.push(newObj);
 
 console.log("Es. 6: ", cars);
 
 for (i = 0; i < cars.length; i++) {
-  cars[i].trims.pop();
+  const carObj = cars[i];
+  carObj.trims.pop();
 }
 
 console.log(cars);
@@ -84,24 +85,25 @@ console.log(cars);
 const justTrims = [];
 
 for (i = 0; i < cars.length; i++) {
-  cars[i].trims.shift();
+  const carObj = cars[i];
+  justTrims.push(carObj.trims[0]);
 }
 console.log(justTrims);
-console.log(cars);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
-// const letter = "b";
-// for (let i = 0; i < cars.length; i++) {
-//   if (cars.color === letter) {
-//     console.log("Fizz");
-//   } else if (cars.color !== letter) {
-//     console.log("Buzz");
-//   }
-// }
+const letter = "b";
+for (let i = 0; i < cars.length; i++) {
+  const carOb = cars[i];
+  if (carOb.color.charAt(0) === letter) {
+    console.log("Fizz");
+  } else {
+    console.log("Buzz");
+  }
+}
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
