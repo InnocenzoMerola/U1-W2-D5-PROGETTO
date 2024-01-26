@@ -71,20 +71,23 @@ cars.newObj = { brand: "Mercedes", model: "ClasseA", color: "Gray", trins: ["act
 cars.push(newObj);
 
 console.log("Es. 6: ", cars);
+
 for (i = 0; i < cars.length; i++) {
   cars[i].trims.pop();
 }
+
+console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = [];
 
-// for (i = 0; i < cars.length; i++) {
-//   cars[i].trims.shift();
-// }
-// console.log(justTrims);
-// console.log(cars);
+for (i = 0; i < cars.length; i++) {
+  cars[i].trims.shift();
+}
+console.log(justTrims);
+console.log(cars);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
