@@ -1,6 +1,9 @@
 /* Your styles here */
-head {
+
+* {
   box-sizing: border-box;
+}
+head {
   width: 100%;
 }
 
