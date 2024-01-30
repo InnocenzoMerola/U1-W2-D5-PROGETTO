@@ -66,8 +66,7 @@ console.log("Es. 5: ", cars);
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-const newObj = [];
-cars.newObj = { brand: "Mercedes", model: "ClasseA", color: "Gray", trims: ["active", "style"] };
+const newObj = { brand: "Mercedes", model: "ClasseA", color: "Gray", trims: ["active", "style"] };
 cars.push(newObj);
 
 console.log("Es. 6: ", cars);
@@ -77,7 +76,7 @@ for (i = 0; i < cars.length; i++) {
   carObj.trims.pop();
 }
 
-console.log(cars);
+console.log("Es. 6: ", cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
@@ -88,7 +87,7 @@ for (i = 0; i < cars.length; i++) {
   const carObj = cars[i];
   justTrims.push(carObj.trims[0]);
 }
-console.log(justTrims);
+console.log("Es. 7: ", justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
@@ -110,11 +109,87 @@ for (let i = 0; i < cars.length; i++) {
 */
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
 
+while (i < numericArray.length) {
+  console.log(numericArray[i]);
+  if (numericArray[i] === 32) {
+    break;
+  }
+  i++;
+}
+
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+const lettersPos = [];
 
-const myArr = [];
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case "a":
+      lettersPos.push(1);
+      break;
+    case "b":
+      lettersPos.push(2);
+      break;
+    case "c":
+      lettersPos.push(3);
+      break;
+    case "d":
+      lettersPos.push(4);
+      break;
+    case "e":
+      lettersPos.push(5);
+      break;
+    case "f":
+      lettersPos.push(6);
+      break;
+    case "g":
+      lettersPos.push(7);
+      break;
+    case "h":
+      lettersPos.push(8);
+      break;
+    case "i":
+      lettersPos.push(9);
+      break;
+    case "l":
+      lettersPos.push(10);
+      break;
+    case "m":
+      lettersPos.push(11);
+      break;
+    case "n":
+      lettersPos.push(12);
+      break;
+    case "o":
+      lettersPos.push(13);
+      break;
+    case "p":
+      lettersPos.push(14);
+      break;
+    case "q":
+      lettersPos.push(15);
+      break;
+    case "r":
+      lettersPos.push(16);
+      break;
+    case "s":
+      lettersPos.push(17);
+      break;
+    case "t":
+      lettersPos.push(18);
+      break;
+    case "u":
+      lettersPos.push(19);
+      break;
+    case "v":
+      lettersPos.push(20);
+      break;
+    case "z":
+      lettersPos.push(21);
+      break;
+  }
+}
+console.log(lettersPos);
